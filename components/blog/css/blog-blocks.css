@@ -1,0 +1,37 @@
+/**
+ * Блок с кнопкой "Создать блог"
+ */
+.ls-block--blog-add .ls-block-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/**
+ * Список блогов
+ */
+.ls-block.blog-block-blogs .ls-item-group {
+    overflow: hidden;
+    padding: 0 20px;
+}
+.ls-block.blog-block-blogs .ls-item {
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 11px;
+    border: none;
+}
+.ls-block.blog-block-blogs .ls-item:last-child {
+    border: 0;
+}
+.ls-block.blog-block-blogs .ls-item-title {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.ls-block.blog-block-blogs .ls-item-image {
+    width: 36px;
+    height: 36px;
+}
+
+.ls-block.ls-block--blog-photo {
+    border: none;
+    padding-bottom: 0;
+}

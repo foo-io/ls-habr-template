@@ -1,0 +1,194 @@
+/**
+ * Блок
+ *
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+.ls-block {
+    overflow: hidden;
+	background: #f7f7f7;
+}
+.ls-block + .ls-block {
+    margin-top: 20px;
+}
+.ls-block:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
+}
+.ls-block .text-help {
+    font-size: 11px;
+    line-height: 14px;
+}
+.ls-block .ls-text {
+    font-size: 13px;
+    line-height: 18px;
+}
+.ls-block .max-height-200 {
+    overflow: auto;
+    max-height: 200px;
+    position: relative;
+}
+.ls-block h3 {
+    font-size: 16px;
+	margin: 0;
+}
+
+/* Шапка */
+.ls-block-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 20px;
+    height: 50px;
+    border-bottom: 1px solid #d5dddf;
+}
+.ls-block-header .ls-block-title {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #505c66;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    font-size: 13px;
+	font-weight: 500;
+    font-family: 'Fira Sans',sans-serif;
+    line-height: 50px;
+}
+
+.ls-block-header:before {
+    bottom: 13px;
+}
+
+.ls-block--has-tabs .ls-block-header {
+}
+.ls-block--has-tabs .ls-block-header:before {
+    display: none;
+}
+.ls-block--has-tabs .ls-block .ls-tab-list:before {
+    display: block;
+}
+
+/* Навигация */
+.ls-block .ls-tabs:not(:last-child) {
+}
+.ls-block .ls-tab-list {
+    margin: 10px 20px 10px 20px;
+    position: relative;
+    z-index: 1;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* margin: 0; */
+    padding: 0;
+    border: 1px solid #d5dddf;
+    border-radius: 3px;
+    list-style: none;
+    background: #fff;
+}
+.ls-block .ls-tab-list .ls-tab {
+}
+.ls-block .ls-tab-list .ls-tab .ls-tab-inner {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin: -1px;
+    padding: 0 18px;
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    color: #6c797f;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+    line-height: 30px;
+}
+
+/* Hover */
+.ls-block .ls-tab-list .ls-tab .ls-tab-inner:hover,
+.ls-block .ls-tab-list .ls-tab:hover .ls-tab-inner {
+    color: #4d80aa;
+}
+
+/* Active */
+.ls-block .ls-tab-list .ls-tab.active .ls-tab-inner {
+    color: #628fa5;
+    border-color: #77a8d0;
+    text-decoration: none;
+}
+
+/* Контент */
+.ls-block-content {
+	padding: 20px 20px;
+}
+
+/* Подвал */
+.ls-block-footer {
+    margin: 0 20px;
+    height: 50px;
+    border-top: 1px solid #d5dddf;
+    white-space: nowrap;
+    line-height: 50px;
+}
+.ls-block-footer a {
+    color: #4d80aa;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+.ls-block-footer a:hover {
+	text-decoration: underline;
+}
+.ls-block-footer .ls-search-form {
+    padding: 0;
+    margin: 5px 0;
+}
+
+/**
+ * Поддержка списков
+ */
+.ls-block .ls-item-group {
+    border: none;
+}
+.ls-block .ls-block-content + .ls-item-group {
+    border-top: 1px solid #eee;
+}
+
+/**
+ * @modifier nopadding Блок без отступов у контента
+ */
+.ls-block--nopadding .ls-block-content {
+    padding: 0;
+}
+
+/**
+ * @modifier transparent Блок без фона
+ */
+.ls-block--transparent {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.ls-block .ls-blankslate {
+    margin-bottom: 0;
+    padding: 10px;
+    background: #eafff8;
+    color: #555;
+    border-radius: 5px;
+    font-size: 11px;
+}
