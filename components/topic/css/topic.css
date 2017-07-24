@@ -1,0 +1,241 @@
+/**
+ * Топики
+ *
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+
+/**
+ * Основные стили
+ */
+.ls-topic:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+
+/**
+ * Шапка
+ */
+.ls-time-published {
+	display: inline-block;
+    margin-bottom: 2px;
+    color: #7e7e7e;
+    vertical-align: baseline;
+    font-size: 11px;
+}
+.ls-topic-header {
+    margin-bottom: 25px;
+}
+
+.ls-topic-title {
+    font-size: 27px;
+    line-height: 1.1em;
+    font-weight: normal;
+    margin: 0 0 5px;
+}
+.ls-topic-title:last-child {
+    margin-bottom: 0;
+}
+.ls-topic-title a {
+    color: #444;
+    font-weight: 500;
+}
+.ls-topic-title a:hover {
+    color: #548eaa;
+    text-decoration: none;
+}
+.ls-topic-title a:visited {
+    color: #4d7284;
+}
+.ls-topic-title .syn-icon {
+    position: relative;
+    top: 4px;
+}
+h1.ls-topic-title {
+	color: #444;
+	font-size: 32px;
+	font-weight: 500;
+    line-height: 40px;
+}
+.ls-topic-blogs {
+	position: relative;
+    margin-bottom: 15px;
+    padding: 0 0 0 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 11px;
+}
+.ls-topic-blogs a {
+    color: #999;
+}
+.ls-topic-blogs a:hover {
+    text-decoration: underline;
+}
+.ls-topic-blogs:before {
+	content: "\f0f2";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    margin-right: 5px;
+    color: #9bbcc6;
+    font-size: 15px;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+/**
+ * Содержимое топика
+ */
+.ls-topic-content {
+    margin-bottom: 20px;
+}
+.ls-topic-text.ls-text {
+    font-size: 14px;
+    font-family: Verdana,sans-serif;
+    line-height: 160%;
+}
+.ls-topic-cut {
+    margin-top: 10px;
+}
+
+/* Опросы */
+.ls-topic .ls-poll {
+    margin-bottom: 20px;
+}
+
+
+/**
+ * Подвал
+ */
+.ls-topic-footer {
+}
+.ls-topic-footer .ls-topic-info-item {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+.ls-topic-info {
+	font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -js-display: inline-flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #ebeaea;
+    height: 40px;
+    width: auto;
+    position: relative;
+    background: #fff;
+    box-sizing: border-box;
+}
+.ls-topic-info a {
+    text-decoration: none;
+}
+.ls-topic-info a:hover {
+}
+.ls-topic-info-item.ls-topic-info-item--share {
+    line-height: 37px;
+	margin-right: 10px;
+	border-left: 1px solid #ebeaea;
+    padding-left: 8px;
+}
+.ls-topic-favourite {
+    margin: 0px 0px 0 5px;
+    height: 100%;
+}
+
+/* Автор */
+.ls-topic-info-item.ls-topic-info-item--author {
+	padding-left: 10px;
+    line-height: 37px;
+	margin-right: 20px;
+}
+.ls-topic-info-item.ls-topic-info-item--author .ls-avatar {
+}
+
+/* Ссылка на комментарии */
+.ls-topic-info-item.ls-topic-info-item--comments {
+	border-left: 1px solid #ebeaea;
+    padding: 0 15px;
+	line-height: 38px;
+}
+.ls-topic-info-item.ls-topic-info-item--comments a {
+    font-weight: 700;
+    color: #6da3bd;
+	font-size: 13px;
+}
+
+.ls-topic-info-item--comments-count:before {
+	content: "\f075";
+    font: normal normal normal 14px/1 FontAwesome;
+	font-size: 16px;
+    color: #bbc8cc;
+    margin-right: 8px;
+}
+.ls-topic-info-item--comments-count:hover:before {
+    color: #6da3bd;
+	text-decoration: none;
+}
+.ls-topic-info-item--comments:hover .ls-topic-info-item--comments-count {
+    
+}
+
+.ls-topic-info-item--comments--has-new .ls-topic-info-item--comments-count {
+    color: #000;
+}
+.ls-topic-info-item--comments--has-new .ls-topic-info-item--comments-count:before {
+    background-image: url(../images/comments-active.png);
+}
+
+.ls-topic-info-item--comments-new {
+    color: #27a736;
+    text-decoration: none;
+}
+
+/* Голосование */
+.ls-topic-info-item.ls-topic-info-item--vote {
+    padding: 0 5px;
+    border-right: 1px solid #ebeaea;
+}
+
+/**
+ * Превью (изображение)
+ */
+.ls-topic-preview-image {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: #f7f7f7;
+}
+.ls-topic-preview-image img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+/**
+ * Предпросмотр топика
+ */
+.ls-topic-preview {
+    margin-top: 30px;
+    border: 1px solid #eee;
+    display: none;
+}
+.ls-topic-preview-header {
+    padding: 20px 30px;
+    background: #fafafa;
+}
+.ls-topic-preview-title {
+    margin: 0;
+}
+.ls-topic-preview-body {
+    padding: 30px;
+}
+.ls-topic-preview-footer {
+    padding: 0 30px 30px;
+}

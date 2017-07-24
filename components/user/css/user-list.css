@@ -1,0 +1,65 @@
+.user-list-item-username {
+    margin-bottom: 4px;
+}
+.user-list-item-login {
+    position: relative;
+    padding-left: 1em;
+    color: #548eaa;
+    font-size: 14px;
+    line-height: 18px;
+}
+.user-list-item-login:hover, .user-list-item-name:hover {
+	color: #4d7285;
+    text-decoration: underline;
+}
+.user-list-item-login:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '@';
+}
+.user-list-item-name {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #444;
+    vertical-align: top;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    line-height: 18px;
+}
+
+.user-list-item-status {
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 13px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    line-height: 16px;
+}
+.user-list-item-status--online {
+    color: #689d29;
+}
+
+.user-list-item-note {
+    background: #fcfce9;
+    padding: 5px 10px;
+    font-size: 11px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.user-list-item-rating {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 12px;
+    color: #cd66cd;
+    font-weight: 600;
+}
+.user-list-item-rating .syn-icon {
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}

@@ -1,0 +1,224 @@
+/**
+ * Голосование
+ *
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+.ls-vote--default {
+	line-height: 38px;
+}
+.ls-vote--default.ls-vote--not-voted:not(.ls-vote--locked) {
+}
+.ls-vote--default .ls-vote-rating {
+    display: none;
+}
+.ls-vote--default.ls-vote--locked .ls-vote-rating,
+.ls-vote--default.ls-vote--voted .ls-vote-rating {
+    display: block;
+}
+.ls-vote--default .ls-vote-rating,
+.ls-vote--default .ls-vote-item {
+    float: left;
+    text-align: center;
+}
+
+.ls-vote--default .ls-vote-item {
+    padding: 0 7px;
+	cursor: pointer;
+}
+
+.ls-vote--default .ls-vote-rating {
+    width: auto;
+    padding: 0 0 0 10px;
+}
+
+/* Icon */
+.ls-vote--default .ls-vote-item:before {
+    font: normal normal normal 14px/1 FontAwesome;
+	font-size: 16px;
+	font-weight: 800;
+	color: #c7d4d8;
+}
+.ls-vote--default .ls-vote-item-up:before      { 
+	content: "\f176";
+}
+.ls-vote--default .ls-vote-item-down:before    { 
+	content: "\f175";
+}
+.ls-vote--default .ls-vote-item-abstain:before { 
+	content: "\f068";
+}
+
+/* Hover */
+.ls-vote--default .ls-vote-item-abstain:hover:before {
+}
+.ls-vote--default .ls-vote-item-abstain:hover {
+}
+
+.ls-vote--default .ls-vote-item-up:hover:before {
+    color: #7ba600;
+}
+
+.ls-vote--default .ls-vote-item-down:hover:before {
+    color: #d53c30;
+}
+
+/* Locked */
+.ls-vote--default.ls-vote--locked .ls-vote-item {
+    display: none;
+}
+.ls-vote--default.ls-vote--locked:not(.ls-vote--voted) .ls-vote-rating {
+    padding-right: 10px;
+}
+
+/* Voted */
+.ls-vote--default.ls-vote--locked,
+.ls-vote--default.ls-vote--voted {
+}
+.ls-vote--default.ls-vote--voted .ls-vote-item {
+    background: none;
+    display: none;
+}
+
+/* Zero */
+.ls-vote--default .ls-vote-rating { 
+    color: #628fa5;
+    vertical-align: baseline;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+}
+
+
+/* Positive */
+.ls-vote--default.ls-vote--count-positive .ls-vote-rating { 
+    color: #6c9007;
+    vertical-align: baseline;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+}
+
+/* Negative */
+.ls-vote--default.ls-vote--count-negative .ls-vote-rating { 
+    color: #d53c30;
+    vertical-align: baseline;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+}
+
+
+/* Zero */
+.ls-vote--default.ls-vote--count-zero .ls-vote-rating { 
+    color: #628fa5;
+    vertical-align: baseline;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+}
+
+/* Up */
+.ls-vote--default.ls-vote--voted.ls-vote--voted-up .ls-vote-item-up { display: block; }
+.ls-vote--default.ls-vote--voted.ls-vote--voted-up.ls-vote--count-positive .ls-vote-item-up:before { background-image: url(../images/vote-default-up-positive.png); }
+.ls-vote--default.ls-vote--voted.ls-vote--voted-up.ls-vote--count-negative .ls-vote-item-up:before { background-image: url(../images/vote-default-up-negative.png); }
+.ls-vote--default.ls-vote--voted.ls-vote--voted-up.ls-vote--count-zero     .ls-vote-item-up:before { background-image: url(../images/vote-default-up.png); }
+
+/* Down */
+.ls-vote--default.ls-vote--voted.ls-vote--voted-down .ls-vote-item-down { display: block; }
+.ls-vote--default.ls-vote--voted.ls-vote--voted-down.ls-vote--count-positive .ls-vote-item-down:before { background-image: url(../images/vote-default-down-positive.png); }
+.ls-vote--default.ls-vote--voted.ls-vote--voted-down.ls-vote--count-negative .ls-vote-item-down:before { background-image: url(../images/vote-default-down-negative.png); }
+.ls-vote--default.ls-vote--voted.ls-vote--voted-down.ls-vote--count-zero     .ls-vote-item-down:before { background-image: url(../images/vote-default-down.png); }
+
+/* Abstain */
+.ls-vote--default.ls-vote--voted.ls-vote--voted-abstain .ls-vote-item-abstain { display: block; }
+.ls-vote--default.ls-vote--voted.ls-vote--voted-abstain.ls-vote--count-positive .ls-vote-item-abstain:before { content: "\f176"; }
+.ls-vote--default.ls-vote--voted.ls-vote--voted-abstain.ls-vote--count-negative .ls-vote-item-abstain:before { content: "\f175"; }
+.ls-vote--default.ls-vote--voted.ls-vote--voted-abstain.ls-vote--count-zero     .ls-vote-item-abstain:before { content: "\f068"; }
+
+/**
+ * Small
+ */
+
+/* Body */
+.ls-vote--small .ls-vote-body {
+    position: relative;
+    padding-right: 55px;
+}
+
+/* Vote Item */
+.ls-vote--small .ls-vote-item {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: -1px;
+    background-repeat: no-repeat;
+    transition: background .2s;
+}
+
+.ls-vote--small .ls-vote-item-up {
+    right: 0;
+    background-image: url(../images/vote-small-up.png);
+}
+.ls-vote--small .ls-vote-item-down {
+    right: 25px;
+    background-image: url(../images/vote-small-down.png);
+}
+.ls-vote--small .ls-vote-item-up:hover   { background-image: url(../images/vote-small-up-hover.png); }
+.ls-vote--small .ls-vote-item-down:hover { background-image: url(../images/vote-small-down-hover.png); }
+
+/* Rating */
+.ls-vote--small .ls-vote-rating { font-weight: bold; color: #aaa; font-size: 11px; }
+
+.ls-vote--small.ls-vote--count-positive .ls-vote-rating { color: #51983c; }
+.ls-vote--small.ls-vote--count-negative .ls-vote-rating { color: #da4242; }
+
+/* Voted */
+.ls-vote--small.ls-vote--voted .ls-vote-body { padding-right: 30px; }
+
+.ls-vote--small.ls-vote--voted .ls-vote-item {
+    right: 0;
+}
+.ls-vote--small.ls-vote--voted .ls-vote-item:hover {
+    cursor: default;
+}
+.ls-vote--small.ls-vote--voted .ls-vote-item-up   { background-image: url(../images/vote-small-up-active.png); }
+.ls-vote--small.ls-vote--voted .ls-vote-item-down { background-image: url(../images/vote-small-down-active.png); }
+
+.ls-vote--small.ls-vote--voted.ls-vote--voted-zero .ls-vote-item-down,
+.ls-vote--small.ls-vote--voted.ls-vote--voted-zero .ls-vote-item-up,
+
+.ls-vote--small.ls-vote--voted.ls-vote--voted-up .ls-vote-item-down,
+.ls-vote--small.ls-vote--voted.ls-vote--voted-up .ls-vote-item-abstain,
+
+.ls-vote--small.ls-vote--voted.ls-vote--voted-down .ls-vote-item-up,
+.ls-vote--small.ls-vote--voted.ls-vote--voted-down .ls-vote-item-abstain { display: none; }
+
+/* Locked */
+.ls-vote--small.ls-vote--locked .ls-vote-body {
+    padding-right: 0;
+}
+.ls-vote--small.ls-vote--locked .ls-vote-item {
+    display: none;
+}
+
+/**
+ * Info
+ */
+.ls-vote-info-item:not(:last-child) {
+    margin-bottom: 5px;
+}
+.ls-vote-info-item:before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.ls-vote-info-item--up:before { background-image: url(../images/info-up.png); }
+.ls-vote-info-item--down:before { background-image: url(../images/info-down.png); }
+.ls-vote-info-item--abstain:before { background-image: url(../images/info-abstain.png); }

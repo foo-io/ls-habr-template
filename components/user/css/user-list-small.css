@@ -1,0 +1,73 @@
+/**
+ * Список пользователей
+ */
+.user-list-small {
+    margin-bottom: 15px;
+    max-height: 440px;
+    overflow: auto;
+}
+.user-list-small:last-child {
+    margin-bottom: 0;
+}
+.user-list-small-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.user-list-small-item {
+    background: #f8fbfe;
+    padding: 10px 55px 10px 10px;
+    margin-bottom: 1px;
+    position: relative;
+}
+.user-list-small-item:last-child {
+    margin-bottom: 0;
+}
+.user-list-small-item input {
+    vertical-align: middle;
+}
+.user-list-small-item.selected {
+    background: #fcfce9;
+}
+.user-list-small-item-actions {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -12px;
+}
+.user-list-small-item-actions li {
+    display: inline-block;
+    cursor: pointer;
+}
+.user-list-small-item-actions li:hover {
+}
+
+.user-list-small-item .ls-avatar {
+    width: 100%;
+    padding-left: 35px;
+    position: relative;
+    min-height: 24px;
+    box-sizing: border-box;
+}
+.user-list-small-item .ls-avatar-image-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+.user-list-small-item .ls-avatar--inline .ls-avatar-name {
+    padding-top: 2px;
+    display: block;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+/* Selectable */
+.user-list-small--selectable .user-list-small-item {
+    position: relative;
+    padding-left: 30px;
+}
+.user-list-small--selectable .user-list-small-item input[type="checkbox"] {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}

@@ -1,0 +1,135 @@
+/**
+ * Шапка профиля
+ *
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+.user-profile {
+    position: relative;
+}
+
+.user-profile-user {
+    padding-right: 100px;
+}
+
+/* Аватар */
+.user-profile-user-avatar {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin: 0 18px 0 0;
+    border-radius: 5px;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+/* Логин и имя */
+.user-profile-user-body {
+    float: left;
+    padding-top: 16px;
+}
+.user-profile--has-name .user-profile-user-body {
+    padding-top: 7px;
+}
+.user-profile-user-login {
+    margin-bottom: 1px;
+    font-size: 27px;
+    line-height: 1.3em;
+}
+.user-profile-user-login,
+.user-profile-user-login a {
+    color: #eee;
+    color: rgba(0, 0, 0, .9);
+}
+.user-profile-user-login a:hover {
+    color: #fff;
+    color: rgba(0, 0, 0, 1);
+}
+.user-profile-user-name {
+    font-size: 17px;
+    color: #949aa1;
+    font-family: "PT Sans";
+}
+.user-profile-user-login,
+.user-profile-user-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Рейтинг */
+.user-profile-rating {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    text-align: center;
+}
+.user-profile-rating-label {
+    font-size: 10px;
+    text-transform: lowercase;
+    color: #aaa;
+}
+.user-profile-rating-value {
+    height: 24px;
+    padding: 0 10px;
+    margin-bottom: 0px;
+    font-size: 11px;
+    line-height: 1em;
+    text-align: center;
+    line-height: 23px;
+    background: #def7dc;
+    color: #5fa459;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1) inset;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .1) inset;
+}
+.user-profile-rating--negative .user-profile-rating-value {
+    background: #ff8a8a;
+    color: #da4242;
+    -webkit-box-shadow: 0 2px 3px #e95e5e inset;
+    box-shadow: 0 2px 3px #e95e5e inset;
+}
+
+
+
+/**
+ * Responsive
+ */
+@media (max-width: 999px)  {
+    .user-profile {
+        margin: -15px -15px 15px -15px;
+    }
+}
+@media (max-width: 480px)  {
+    .user-profile {
+        text-align: center;
+        margin: -15px -15px 15px -15px;
+    }
+    .user-profile-user,
+    .user-profile-user-avatar,
+    .user-profile-user-body {
+        float: none;
+    }
+    .user-profile-user-body {
+        margin-bottom: 15px;
+    }
+    .user-profile-user {
+        padding-right: 0;
+    }
+    .user-profile-user-avatar {
+        width: 100px;
+        height: 100px;
+        margin-right: 0;
+    }
+    .user-profile-rating {
+        position: static;
+        text-align: inherit;
+    }
+    .user-profile-rating-value,
+    .user-profile-rating-label {
+        font-size: inherit;
+        display: inline;
+    }
+}

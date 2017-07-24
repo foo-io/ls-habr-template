@@ -1,0 +1,161 @@
+/**
+ * Юзербар
+ *
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+.ls-userbar {
+	position: relative;
+    z-index: 500;
+    box-sizing: border-box;
+    height: 68px;
+    border-bottom: 1px solid #d5dddf;
+    background: #fff;
+}
+.ls-userbar-inner {
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Лого */
+.ls-userbar-logo {
+    float: left;
+    font-size: 25px;
+	font-weight: bold;
+    line-height: 67px;
+    margin: 0 30px 0 0px;
+}
+.ls-userbar-logo a {
+    color: #464646;
+}
+.ls-userbar-logo a:hover {
+    color: #464646;
+}
+
+/* Меню */
+.ls-userbar-nav {
+    float: left;
+    line-height: 50px;
+}
+.ls-userbar-nav .ls-nav-item {
+    float: left;
+    margin-right: 28px;
+}
+.ls-userbar-nav .ls-nav-item-link {
+    display: block;
+    line-height: 67px;
+    color: #838a92;
+    text-decoration: none;
+	font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.ls-userbar-nav .ls-nav-item.active .ls-nav-item-link,
+.ls-userbar-nav .ls-nav-item-link:active {
+    color: #464646;
+}
+.ls-userbar-nav .ls-nav-item-link:hover {
+    color: #5096b1;
+}
+
+/* Меню авторизации */
+.ls-userbar-auth-nav {
+    float: right;
+    height: 67px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+.ls-userbar-auth-nav .ls-nav-item {
+    box-sizing: border-box;
+    padding: 0 15px;
+    height: 36px;
+    border-radius: 3px;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    background-color: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    margin-left: 12px;
+}
+.ls-userbar-auth-nav .ls-userbar-auth-login {
+	border: 1px solid #a4afba;
+}
+.ls-userbar-auth-nav .ls-userbar-auth-login:hover {
+	border-color: #65a3be;
+    background-color: transparent;
+}
+.ls-userbar-auth-nav .ls-userbar-auth-login a {
+	color: #838a92;
+}
+.ls-userbar-auth-nav .ls-userbar-auth-login a:hover {
+    color: #4e879c;
+    text-decoration: none;
+}
+.ls-userbar-auth-nav .ls-userbar-auth-registration {
+    border: 1px solid transparent;
+    background-color: #65a3be;
+}
+.ls-userbar-auth-nav .ls-userbar-auth-registration:hover {
+	border-color: transparent;
+    background-color: #4986a1;
+    color: #fff;
+    text-decoration: none;
+}
+.ls-userbar-auth-nav .ls-userbar-auth-registration a {
+	color: #fff;	
+}
+
+
+/* Рейтинг */
+.ls-userbar-notifications {
+    position: absolute;
+    top: 17px;
+    right: 220px;
+    font-size: 11px;
+}
+
+.ls-userbar-notifications-item:not(:last-child) {
+    margin-right: 15px;
+}
+.ls-userbar-notifications-item .syn-icon {
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+.ls-userbar-rating {
+    color: #93d3f2;
+    cursor: help;
+}
+.ls-userbar-messages,
+.ls-userbar-messages:hover {
+    color: #3fd54d;
+}
+
+/**
+ * Responsive styles
+ */
+@media (max-width: 360px)  {
+    .ls-userbar-inner {
+        padding: 0;
+    }
+}
