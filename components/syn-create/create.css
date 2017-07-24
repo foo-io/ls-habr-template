@@ -1,0 +1,40 @@
+.ls-modal.syn-create-modal {
+    max-width: 620px;
+    background: #e0eff9;
+}
+.ls-modal.syn-create-modal .ls-modal-body {
+    padding-top: 0;
+}
+
+.syn-create-items {
+    font-size: 19px;
+    font-family: 'PT Sans', sans-serif;
+    overflow: hidden;
+}
+
+.syn-create-item {
+    float: left;
+    width: 115px;
+    text-align: center;
+    margin: 0 10px 20px;
+    display: block;
+    color: #bad7ea;
+}
+.syn-create-item:hover {
+    color: #608ada;
+}
+.syn-create-item-image {
+    width: 115px;
+    height: 115px;
+    background-repeat: no-repeat;
+    font-size: 88px;
+}
+.syn-create-item-text {
+    color: #727a90;
+    text-decoration: underline;
+}
+
+.syn-create-item:focus .syn-create-item-text,
+.syn-create-item:hover .syn-create-item-text {
+    color: #275ec2;
+}

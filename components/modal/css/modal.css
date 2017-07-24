@@ -1,0 +1,185 @@
+/**
+ * Modals
+ *
+ * @module modal
+ *
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+
+/* Base class */
+.ls-modal {
+    display: none;
+    margin: 50px auto;
+    position: relative;
+    min-width: 300px;
+    max-width: 500px;
+    color: #333;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+
+/* Close button */
+.ls-modal .ls-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* Actionbar */
+.ls-modal .ls-actionbar {
+    background: #eef6ff;
+}
+
+/* Header */
+.ls-modal-header {
+    padding: 25px 30px 0;
+    position: relative;
+    min-height: 20px;
+}
+.ls-modal-title {
+	font-weight: 500;
+    margin: 0 30px 0 0;
+    color: #444;
+}
+
+
+/* Табы */
+.ls-modal > .ls-tabs.ls-modal-tabs .ls-tab-list {
+    margin: 15px 30px 0;
+    position: relative;
+    z-index: 1;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* margin: 0; */
+    padding: 0;
+    border: 1px solid #d5dddf;
+    border-radius: 3px;
+    list-style: none;
+    background: #fff;
+}
+
+/* Навигация */
+.ls-modal > .ls-tabs:not(:last-child) {
+    margin-bottom: 10px;
+}
+.ls-modal > .ls-tabs .ls-tab-list {
+    margin-bottom: 0;
+    border: none;
+    font-size: 11px;
+    position: relative;
+}
+.ls-modal > .ls-tabs .ls-tab-pane-content {
+    padding: 30px;
+}
+.ls-modal > .ls-tabs .ls-tab-list .ls-tab .ls-tab-inner {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin: -1px;
+    padding: 0 18px;
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    color: #6c797f;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+    line-height: 30px;
+}
+
+/* Hover */
+.ls-modal .ls-tab-list .ls-tab .ls-tab-inner:hover,
+.ls-modal .ls-tab-list .ls-tab:hover .ls-tab-inner {
+    color: #333;
+}
+
+/* Active */
+.ls-modal .ls-tab-list .ls-tab.active .ls-tab-inner {
+    color: #628fa5;
+    border-color: #77a8d0;
+    text-decoration: none;
+}
+
+/* Content */
+.ls-modal-body {
+    padding: 30px;
+}
+
+
+/* Lock */
+.ls-modal-lock {
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .2;
+    filter: alpha(opacity=20);
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+
+
+/* Footer */
+.ls-modal-footer {
+    padding: 0 30px 30px;
+    text-align: right;
+}
+
+
+/* Loader */
+.ls-modal-loader {
+    display: none;
+    width: 100px;
+    height: 50px;
+    margin: -25px 0 0 -50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    background-color: #000;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1001;
+}
+.ls-modal-loader.ls-modal-loader-text {
+    background-image: none;
+    color: #eee;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.2em;
+    padding: 15px;
+    width: 300px;
+    margin-left: -150px;
+    height: auto;
+}
+
+
+/* Overlay */
+.ls-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYmBgaAAIMAAAjwCD5Hc2/AAAAABJRU5ErkJggg==);;
+    background: rgba(0,0,0,.5);
+    z-index: 999;
+    overflow: auto;
+    padding: 30px;
+}

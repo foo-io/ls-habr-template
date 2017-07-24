@@ -1,0 +1,69 @@
+.syn-icon {
+    display: inline-block;
+}
+.syn-icon-close {
+    width: 15px;
+    height: 15px;
+    background-image: url(icons/close.png);
+}
+.syn-icon-close:hover {
+    background-image: url(icons/close-hover.png);
+}
+.syn-icon-submit {
+    width: 11px;
+    height: 11px;
+    background-image: url(icons/submit.png);
+}
+.syn-icon-fold {
+    width: 13px;
+    height: 13px;
+    background-image: url(icons/fold.png);
+}
+.syn-icon-unfold {
+    width: 13px;
+    height: 13px;
+    background-image: url(icons/unfold.png);
+}
+.syn-icon-rating {
+    width: 10px;
+    height: 11px;
+    background-image: url(icons/rating.png);
+}
+.syn-icon-message-new {
+    width: 11px;
+    height: 11px;
+    background-image: url(icons/message-new.png);
+}
+.syn-icon-trash {
+    width: 24px;
+    height: 24px;
+    background-image: url(icons/trash.png);
+    transition: background .2s;
+}
+.syn-icon-trash:hover {
+    background-image: url(icons/trash-hover.png);
+}
+.syn-icon-edit {
+    width: 24px;
+    height: 24px;
+    background-image: url(icons/edit.png);
+    transition: background .2s;
+}
+.syn-icon-edit:hover {
+    background-image: url(icons/edit-hover.png);
+}
+.syn-icon-lock {
+    width: 21px;
+    height: 21px;
+    background-image: url(icons/lock.png);
+}
+.syn-icon-draft {
+    width: 21px;
+    height: 21px;
+    background-image: url(icons/draft.png);
+}
+.syn-icon-user {
+    width: 12px;
+    height: 12px;
+    background-image: url(icons/user.png);
+}

@@ -1,0 +1,62 @@
+/**
+ * Список с информацией
+ */
+.ls-info-list {
+    margin: 0 0 15px 0;
+    list-style: none;
+    padding: 0;
+}
+.ls-info-list:last-child {
+    margin: 0;
+}
+.ls-info-list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 7px 0 7px;
+    width: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+.ls-info-list-item:last-child {
+    margin-bottom: 0;
+}
+.ls-info-list-item > * {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.ls-info-list-item-label {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #515d66;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.ls-info-list-item-content {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    padding-left: 20px;
+    color: #4d80aa;
+    vertical-align: baseline;
+    text-align: right;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    line-height: 1;
+}
+.ls-info-list-item-content a {
+    text-decoration: underline;
+}
+.ls-info-list-item-label-text  {
+}

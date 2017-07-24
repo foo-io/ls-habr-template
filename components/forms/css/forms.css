@@ -1,0 +1,125 @@
+/**
+ * Forms
+ *
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+
+/**
+ * Forms
+ */
+form p {
+    margin-bottom: 20px;
+}
+
+/**
+ * Inputs
+ */
+textarea,
+select,
+input[type="password"],
+input[type="text"] {
+    background: #fff;
+    border: 1px solid #d5dddf;
+    padding: 12px;
+    margin: 0;
+    color: #444;
+    font-size: 14px;
+    font-family: "PT Sans",sans-serif;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #a2bfd2;
+    outline: none;
+}
+
+select,
+input[type="password"],
+input[type="text"] {
+    line-height: 32px;
+    height: 34px;
+}
+
+/* Textarea */
+textarea { line-height: 1.4em; }
+
+/* Select */
+select {
+    padding: 4px;
+}
+select[multiple] {
+    height: auto;
+    min-height: 150px;
+}
+
+/**
+ * Fieldset
+ */
+.fieldset {
+    margin-bottom: 25px;
+    border-radius: 5px;
+    background-color: #f1f7fd;
+}
+.fieldset:last-child {
+    margin-bottom: 0;
+}
+.fieldset-header {
+    padding: 20px;
+}
+.fieldset-body, .fieldset-footer {
+    padding: 0 20px 20px;
+}
+.fieldset-title {
+    font-size: 20px;
+    line-height: 1em;
+    margin-bottom: 0;
+}
+.fieldset-help {
+    color: #aaa;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/**
+ * Placeholder
+ */
+:-moz-placeholder           { color: #afafaf; }
+::-moz-placeholder          { color: #afafaf; opacity: 1; }
+::-webkit-input-placeholder { color: #afafaf; }
+:-ms-input-placeholder      { color: #afafaf; }
+.placeholder                { color: #afafaf; } /* Old IE */
+
+/**
+ * Input file replacer
+ */
+.form-input-file {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+}
+.form-input-file input[type=file] {
+    position: absolute;
+    top: 0;
+    left: -200%;
+}
+
+/**
+ * Form panel
+ */
+.syn-form-panel {
+}
+.syn-form-panel .fieldset {
+    border-radius: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+}
